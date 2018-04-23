@@ -1,6 +1,34 @@
 .openings-box {
   border: 1px solid #ccc;
   width: 300px;
+  font-family: Helvetica;
+  font-size: 14px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+p.movie-title {
+  float: left;
+  clear: left;
+}
+
+p.movie-showtimes-link {
+  float: right;
+  text-align: right;
+  font-size: 10px;
+}
+
+p.more-openings {
+  float: left;
+}
+
+.openings-box-footer {
+  width: 100%;
+  margin: 0 auto;
+  border-top: 1px solid #ccc;
 }
 
 .showtimes-button {
@@ -13,7 +41,7 @@
     display: inline-block;
     font-size: 16px;
     width: 95%;
-    margin: 3px auto;
+    margin: 8px auto;
     cursor: pointer;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;

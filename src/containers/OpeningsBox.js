@@ -36,10 +36,14 @@ class OpeningsBox extends Component {
   render() {
     return (
       <div className='openings-box'>
-        <h3>UK Opening This Week</h3>
-        <MovieList data={this.state.data} />
-        <a href='#'>See more opening this week >></a>
-        <button className='showtimes-button' href='#'>Get Showtimes >></button>
+        <div className='openings-box-top'>
+          <h3>UK Opening This Week</h3>
+          <MovieList data={this.state.data} />
+          <p className='more-openings'><a href='#'>See more opening this week >></a></p>
+        </div>
+        <div className='openings-box-footer'>
+          <button className='showtimes-button' href='#'>Get Showtimes >></button>
+        </div>
       </div>
     );
   }
