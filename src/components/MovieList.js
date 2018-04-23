@@ -3,12 +3,13 @@ import Movie from './Movie';
 
 class MovieList extends Component {
   render(){
-    return (
-      <div className='movie-list'>
-        <Movie title='Sausage Party'>movie 1</Movie>
-        <Movie title='Cafe Society'>movie 2</Movie>
-      </div>
-    );
+    const movieNodes = this.props.data.map(movie => {
+      return (
+        <Movie title={movie.title} key={movie.id}>
+        </Movie>
+      );
+    });
+    return <div className='movie-list'>{movieNodes}</div>;
   }
 }
 
